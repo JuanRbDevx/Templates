@@ -1,0 +1,301 @@
+/* VIEW DESKTOP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Logins/01/wallpaper_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* CONTAINER LOGIN */
+
+.container-login {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2%;
+    margin: 5%;
+
+}
+
+.container-login h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.container-login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-block:10px;
+}
+
+
+
+/* INPUTS */
+
+.container-login input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    margin-block: 10px;
+    border-bottom: 2px solid #ffffff;
+    transition: .2s;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.container-login input[type="email"]:focus,
+.container-login input[type="password"]:focus {
+    height: 70px;
+}
+
+.container-login input[type="email"]::placeholder,
+.container-login input[type="password"]::placeholder {
+    color: #ffffff;
+}
+
+
+/* EMAIL */
+
+.section-email {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+    margin-top: 20px;
+}
+
+.section-email label {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-email svg {
+    position: absolute;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+.section-email a {
+    color: red;
+    text-align: center;
+}
+
+
+/* PASSWORD */
+
+.section-password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+}
+
+.section-password label {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-password svg {
+    position: absolute;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+.section-password a {
+    color: red;
+    text-align: center;
+}
+
+
+/* MORE */
+
+.section-more {
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-inline: 10px;
+    color: #fff;
+}
+
+.section-more label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* BUTTON */
+
+.btn-login {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #000;
+    transition: .2s;
+}
+
+.btn-login:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* FOOTER */
+
+.container-login p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.goForget{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.goRegister{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VIEW MOBILE AND TABLET */
+
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) {
+    .container-login {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .container-login h2{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+
+    .container-login form p{
+        margin-bottom: 20px;
+    }
+
+    .section-more a{
+        font-size: 0.6rem;
+    }
+
+    .section-more label{
+        font-size: 0.6rem;
+    }
+
+    .section-email a{
+        font-size: 0.6rem;
+    }
+
+    .section-password a{
+        font-size: 0.6rem;
+    }
+    
+
+    .container-login p{
+        font-size: 0.8rem;
+        color: white;
+    }
+
+
+}
+
